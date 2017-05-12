@@ -1,0 +1,8 @@
+# Application dependencies
+
+require:
+    - play
+
+# Lombok
+    - org.projectlombok -> lombok 1.16.0
+    - soliton.play.modules -> lombok [1.2.3.2,1.2.4[
