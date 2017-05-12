@@ -13,6 +13,7 @@ import models.user.types.UserType;
 import org.junit.Before;
 import org.junit.Test;
 
+import play.test.Fixtures;
 import play.test.UnitTest;
 
 public class ProjectCriteriaTest extends UnitTest{
@@ -25,17 +26,17 @@ public class ProjectCriteriaTest extends UnitTest{
 
 	@Before
 	public void setup(){
-//		Fixtures.deleteDatabase();
-//
-//		user1 = new User("hharitaAdmin", "p@ssw0rd", UserType.管理者).save();
-//		user2 = new User("hharita", "p@ssw0rd", UserType.利用者).save();
-//		user3 = new User("hatanakaAdmin", "p@ssw0rd", UserType.管理者).save();
-//		user4 = new User("hatanaka", "p@ssw0rd", UserType.利用者).save();
-//
-//		new Project(user1,"realEstate1",ProjectType.不動産案件).save();
-//		new Project(user2,"realEstate2",ProjectType.不動産案件).save();
-//		new Project(user3,"bank",ProjectType.銀行システム案件).save();
-//		new Project(user4,"hospital",ProjectType.病院システム案件).save();
+		Fixtures.deleteDatabase();
+
+		user1 = new User("hharitaAdmin", "p@ssw0rd", UserType.管理者).save();
+		user2 = new User("hharita", "p@ssw0rd", UserType.利用者).save();
+		user3 = new User("hatanakaAdmin", "p@ssw0rd", UserType.管理者).save();
+		user4 = new User("hatanaka", "p@ssw0rd", UserType.利用者).save();
+
+		new Project(user1,"realEstate1",ProjectType.不動産案件).save();
+		new Project(user2,"realEstate2",ProjectType.不動産案件).save();
+		new Project(user3,"bank",ProjectType.銀行システム案件).save();
+		new Project(user4,"hospital",ProjectType.病院システム案件).save();
 	}
 
 
