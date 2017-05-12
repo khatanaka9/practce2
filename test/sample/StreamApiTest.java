@@ -36,7 +36,6 @@ public class StreamApiTest extends UnitTest {
     }
     
 //    TODO hatanaka テストにはそれぞれどのようなテストを行ったのかコメントを追記しましょう
-    //TODO hatanaka このTODOは消して良いです。
     @Test
     public void mapTest() {
         new User("hatanaka", "p@ssw0rd").save();
