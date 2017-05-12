@@ -35,7 +35,8 @@ public class StreamApiTest extends UnitTest {
         assertThat(collect.get(0).map(user -> user.name.equals("hharita")).orElse(false), is(true));
     }
     
-    //TODO hatanaka テストにはそれぞれどのようなテストを行ったのかコメントを追記しましょう
+//    TODO hatanaka テストにはそれぞれどのようなテストを行ったのかコメントを追記しましょう
+    //TODO hatanaka このTODOは消して良いです。
     @Test
     public void mapTest() {
         new User("hatanaka", "p@ssw0rd").save();
