@@ -51,4 +51,5 @@ public class ProjectCriteria extends AbstractEntityCriteria<ProjectCriteria, Pro
 		return this;
 	}
 
+
 }

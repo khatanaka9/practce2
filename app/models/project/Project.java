@@ -49,4 +49,5 @@ public class Project extends Model{
     public ProjectType projectType(){
     	return ProjectType.valueOf(this.projectType);
     }
+
 }
