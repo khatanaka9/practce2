@@ -20,29 +20,35 @@ public  class UsersCollection extends AbstractCollection2<UsersCollection, User>
 		return new UsersCollection(list.stream().filter(user -> user.name.equals(name)).collect(Collectors.toList()));
 	}
 
-	public List<String> mapToUserName(){
-		return (list.stream().map(user -> user.name).collect(Collectors.toList()));
+	//名前で更新
+	public List<String> mapToUserName(String name){
+		return (list.stream().map(user -> name).collect(Collectors.toList()));
 	}
 
+	//名前が"Hatanaka"か判定
 	public boolean isAnyMatchByUserName(){
-		return (list.stream().anyMatch(user -> user.name.equals("name")));
+		return(list.stream().anyMatch(user -> user.name.equals("Hatanaka")));
 	}
 
+	//名前の文字数が8文字か判定
 	public boolean isAllMatchByUserName(){
-		return (list.stream().anyMatch(user -> user.name.equals("name")));
+		return (list.stream().allMatch(user -> user.name.length() == 8));
 	}
 
+	//名前えを昇順にソート
 	public UsersCollection sortedByUserNameAsc(){
 		List<User> sortedList = list.stream().sorted(Comparator.comparing(user -> ((User)user).name)).collect(Collectors.toList());
 		return new UsersCollection(sortedList);
 	}
 
+	//名前を降順にソート
 	public UsersCollection sortedByUserNameDesc(){
 		List<User> sortedList = list.stream().sorted(Comparator.comparing(user -> ((User)user).name).reversed()).collect(Collectors.toList());
 		return new UsersCollection(sortedList);
 	}
 
 
+	//ユーザー種別でフィルタ
 	public UsersCollection filterByUserType(UserType userType) {
 		return new UsersCollection(list.stream().filter(user -> user.userType().equals(userType)).collect(Collectors.toList()));
 	}

@@ -9,7 +9,7 @@ public class ProjectRepo {
 
 	//userで検索
 	public static List<Project> findPass(User user){
-return Project.find("users = ?", user).fetch();
+		return Project.find("users = ?", user).fetch();
 	}
 
 

@@ -7,6 +7,7 @@ import lombok.experimental.Accessors;
 @Accessors(fluent = true)
 public enum UserType {
 
+	//ユーザー種別
 	管理者(1,true),
 	利用者(2,false),
 	;

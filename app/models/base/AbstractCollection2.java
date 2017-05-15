@@ -29,6 +29,9 @@ public abstract class AbstractCollection2<T extends AbstractCollection2, S> impl
         }
     }
 
+
+
+
     //http://d.hatena.ne.jp/Nagise/20131121/1385046248
     protected T toCollection(final List<S> list) {
         try {

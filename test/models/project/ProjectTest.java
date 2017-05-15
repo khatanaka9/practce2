@@ -25,9 +25,9 @@ public class ProjectTest extends UnitTest{
 
 
 	@Test
+	//
 	public void testConstructor(){
-		 Project project1 = new Project(user,"projectName", ProjectType.不動産案件).save();
-
+		 Project project = new Project(user,"projectName", ProjectType.不動産案件).save();
 
 
 	}

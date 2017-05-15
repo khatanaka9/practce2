@@ -1,4 +1,6 @@
-12 5 2017 17:50:39,172 INFO  ~ Starting C:\play\login\projectManagement\.
-12 5 2017 17:50:39,175 WARN  ~ Declaring modules in application.conf is deprecated. Use dependencies.yml instead (module.cobertura)
-12 5 2017 17:50:39,175 ERROR ~ Module cobertura will not be loaded because C:\play\play-1.2.5.4.01-java8\modules\cobertura does not exist
-12 5 2017 17:50:39,912 WARN  ~ You're running Play! in DEV mode
+15 5 2017 18:51:20,561 INFO  ~ Starting C:\play\login\projectManagement\.
+15 5 2017 18:51:20,565 WARN  ~ Declaring modules in application.conf is deprecated. Use dependencies.yml instead (module.cobertura)
+15 5 2017 18:51:20,565 ERROR ~ Module cobertura will not be loaded because C:\play\play-1.2.5.4.01-java8\modules\cobertura does not exist
+15 5 2017 18:51:21,270 WARN  ~ You're running Play! in DEV mode
+15 5 2017 18:51:22,772 INFO  ~ Connected to jdbc:h2:mem:play;MODE=MYSQL;LOCK_MODE=0
+15 5 2017 18:51:23,431 INFO  ~ Application 'projectManagement' is now started !
