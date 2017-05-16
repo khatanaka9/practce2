@@ -133,7 +133,7 @@ public class ProjectCriteriaTest extends UnitTest {
 
 	@Test
 	// 案件種別が不動産案件と病院システム案件のものを絞り込む
-	public void filterByProjectTypeHo() {
+	public void filterByProjectTypeHospital() {
 
 		ProjectType projectTypeRealEstate = ProjectType.不動産案件;
 		ProjectType projectTypeHospital = ProjectType.病院システム案件;

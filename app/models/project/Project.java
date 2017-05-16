@@ -24,12 +24,12 @@ public class Project extends Model {
 	@JoinColumn(name = "users")
 	@Index(name = "idx_Project_userId")
 	@ForeignKey(name = "fk_Project_Users")
-	private User users;
+	public User users;
 
 	// カラムの作成
 	// 案件名
 	@Column(name = "projectName")
-	private String projectName;
+	public String projectName;
 
 	// 案件種別
 	@Column(name = "projectType")
