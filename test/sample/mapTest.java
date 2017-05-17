@@ -33,8 +33,6 @@ public class mapTest extends UnitTest {
 		final UsersCollection userCollection = new UsersCollection(
 				User.findAll());
 
-		// TODO hatanaka これなんかおかしいです。
-
 		final List<String> map = userCollection.mapToUserName();
 
 		// 4件存在するはず

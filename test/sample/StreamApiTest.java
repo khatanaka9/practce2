@@ -12,9 +12,4 @@ public class StreamApiTest extends UnitTest {
 		Fixtures.deleteDatabase();
 
 	}
-
-	// TODO hatanaka テストにはそれぞれどのようなテストを行ったのかコメントを追記しましょう
-
-
-
 }

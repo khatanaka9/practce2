@@ -36,6 +36,5 @@ public class ProjectRepoTest extends UnitTest {
 		assertThat(project.size(), is(1));
 	}
 
-	// TODO hatanaka Repoのテストケースも追加
 
 }

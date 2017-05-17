@@ -36,8 +36,6 @@ public class UserCriteriaTest extends UnitTest {
 		// criteriaにフィルター処理が存在しない場合
 		if (!criteria.hasFilter()) {
 
-			// TODO hatanaka ゴミコードの削除1
-
 			throw new RuntimeException("filter処理がありません。");
 		}
 
@@ -57,8 +55,6 @@ public class UserCriteriaTest extends UnitTest {
 
 		// criteriaにフィルター処理が存在しない場合
 		if (!criteria.hasFilter()) {
-
-			// TODO hatanaka ゴミコードの削除2
 
 			throw new RuntimeException("filter処理がありません。");
 		}

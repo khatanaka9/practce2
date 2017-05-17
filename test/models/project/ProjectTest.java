@@ -25,7 +25,6 @@ public class ProjectTest extends UnitTest {
 		user = new User("hharita", "test").save();
 	}
 
-	// TODO hatanaka Entityのテストケースも追加
 	@Test
 	public void testConstructor() {
 		final Project project = new Project(user, "案件1", ProjectType.不動産案件)

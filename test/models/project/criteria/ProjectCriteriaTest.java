@@ -18,18 +18,7 @@ import play.test.UnitTest;
 
 public class ProjectCriteriaTest extends UnitTest {
 
-	// ----TODO-----
 
-	// projectのカラムにprojectType(案件区分：不動産案件＆銀行システム案件＆病院システム案件)を追加
-	// projectCriteriaクラスを作成する
-
-	// projectの名前部分一致テスト
-	// projectの名前完全一致テスト
-	// projectが不動産案件のものテスト
-	// projectが銀行システム案件のものテスト
-	// projectが不動産案件と病院システム案件のもの（頭つかうかな）テスト
-
-	// 最後：projectを持っているUsersが管理者のもの（応用）
 
 	private User user1;
 	private User user2;

@@ -45,7 +45,7 @@ public class flatmapTest extends UnitTest {
 			return Optional.ofNullable(pr.projectName);
 		});
 
-		// //optional覚えておくこと
+		// optional覚えておくこと
 
 		// nullじゃない場合のみ実行する
 		User userList = (User) optProject.map(pr -> pr.users).orElse(null);

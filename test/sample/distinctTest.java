@@ -34,8 +34,6 @@ public class distinctTest extends UnitTest {
 		// 4件の存在するはず
 		assertThat(distinct.size(), is(2));
 
-		// TODO hatanaka １件目の取得は.get(0)です。
-
 		// 1件目は"AAA"のはず
 		assertThat(distinct.get(0), is("AAA"));
 		// 2件目は"DDD"のはず
