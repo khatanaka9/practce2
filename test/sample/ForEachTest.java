@@ -34,6 +34,7 @@ public class ForEachTest extends UnitTest {
 		//6件が表示される
 		userList.stream().forEach((name) -> System.out.println(name));
 
+
 	}
 
 }
