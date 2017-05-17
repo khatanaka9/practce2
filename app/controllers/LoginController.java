@@ -1,28 +1,23 @@
 package controllers;
 
-import java.util.List;
+import java.util.*;
 
-import models.user.User;
-import play.mvc.Controller;
+import models.user.*;
+import play.mvc.*;
 
-
-
-public class LoginController extends Controller{
-
-	 public static void login(String id,String pass) {
-
-
-
-
-		 List<User> usersList = User.findAll();
-		 System.out.println(usersList.size());
-		 System.out.println(usersList.size());
-		 System.out.println(usersList.size());
-		 System.out.println(usersList.size());
-		 System.out.println(usersList.size());
-
-
-
+public class LoginController extends Controller {
+    
+    public static void login(final String id, final String pass) {
+        
+        final List<User> usersList = User.findAll();
+        System.out.println(usersList.size());
+        System.out.println(usersList.size());
+        System.out.println(usersList.size());
+        System.out.println(usersList.size());
+        System.out.println(usersList.size());
+        
+        //TODO hatanaka testファイル以外も綺麗に
+        
 //		 List<Users> PassList = UserRepo.findPass(pass);
 //		 System.out.println(PassList.size());
 //		 if(PassList.isEmpty()){
@@ -31,6 +26,6 @@ public class LoginController extends Controller{
 //		}
 //	        render();
 //	    }
-	 render();
-	 }
+        render();
+    }
 }
