@@ -10,7 +10,7 @@ import org.junit.Test;
 import play.test.Fixtures;
 import play.test.UnitTest;
 
-public class filterTest extends UnitTest {
+public class FilterTest extends UnitTest {
 
 	@Before
 	public void setUp() {

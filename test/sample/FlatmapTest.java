@@ -15,7 +15,7 @@ import org.junit.Test;
 import play.test.Fixtures;
 import play.test.UnitTest;
 
-public class flatmapTest extends UnitTest {
+public class FlatmapTest extends UnitTest {
 
 	@Before
 	public void setUp() {
@@ -48,7 +48,7 @@ public class flatmapTest extends UnitTest {
 		// optional覚えておくこと
 
 		// nullじゃない場合のみ実行する
-		User userList = (User) optProject.map(pr -> pr.users).orElse(null);
+		User userList = optProject.map(pr -> pr.users).orElse(null);
 
 		System.out.println(userList);
 

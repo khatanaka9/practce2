@@ -10,7 +10,7 @@ import org.junit.Test;
 import play.test.Fixtures;
 import play.test.UnitTest;
 
-public class forEachTest extends UnitTest {
+public class ForEachTest extends UnitTest {
 
 	@Before
 	public void setUp() {

@@ -10,28 +10,30 @@ import org.junit.Test;
 import play.test.Fixtures;
 import play.test.UnitTest;
 
-public class allMatchTest extends UnitTest {
-	// allMatch
+public class AnyMatchTest extends UnitTest {
 
 	@Before
 	public void setUp() {
 		Fixtures.deleteDatabase();
 
 	}
-	@Test
-	public void allMatchTest() {
 
-		// すべての条件に合致する
+	// anyMatch
+	@Test
+	public void anyMatchTest() {
+		// 1つでも条件に合致するものがある
+
 		new User("Hatanaka", "p@ssw0rd").save();
+		new User("hharita", "p@ssw0rd").save();
 		new User("horimoto", "p@ssw0rd").save();
 		new User("watanabe", "p@ssw0rd").save();
 
 		final UsersCollection userCollection = new UsersCollection(
 				User.findAll());
-		final boolean allMatch = userCollection.isAllMatchByUserName();
+		final boolean anyMatch = userCollection.isAnyMatchByUserName();
 
-		// 名前の文字数がすべて8文字であること
-		assertThat(allMatch, is(true));
+		// 一つでも名前に"Hatanaka"があること
+		assertThat(anyMatch, is(true));
 
 	}
 

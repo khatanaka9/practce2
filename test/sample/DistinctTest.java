@@ -12,7 +12,7 @@ import org.junit.Test;
 import play.test.Fixtures;
 import play.test.UnitTest;
 
-public class distinctTest extends UnitTest {
+public class DistinctTest extends UnitTest {
 
 	@Before
 	public void setUp() {

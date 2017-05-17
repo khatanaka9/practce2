@@ -11,7 +11,7 @@ import org.junit.Test;
 import play.test.Fixtures;
 import play.test.UnitTest;
 
-public class enumTest extends UnitTest {
+public class EnumTest extends UnitTest {
 
 	@Before
 	public void setUp() {

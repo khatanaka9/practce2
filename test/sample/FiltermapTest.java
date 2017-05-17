@@ -13,7 +13,7 @@ import org.junit.Test;
 import play.test.Fixtures;
 import play.test.UnitTest;
 
-public class filtermapTest extends UnitTest {
+public class FiltermapTest extends UnitTest {
 
 	@Before
 	public void setUp() {

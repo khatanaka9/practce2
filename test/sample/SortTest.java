@@ -10,7 +10,7 @@ import org.junit.Test;
 import play.test.Fixtures;
 import play.test.UnitTest;
 
-public class sortTest extends UnitTest {
+public class SortTest extends UnitTest {
 
 	@Before
 	public void setUp() {
