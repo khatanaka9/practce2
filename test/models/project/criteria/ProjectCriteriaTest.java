@@ -172,9 +172,6 @@ public class ProjectCriteriaTest extends UnitTest {
 
 		// UserTypeが管理者のレコードが2件とれるはず
 		assertThat(list.size(), is(2));
-		// 取得したデータはユーザー種別が管理者のレコードなはず
-//		list.forEach(project -> assertThat(
-//				project.user().userType().equals(UserType.管理者), is(true)));
 
 	}
 }

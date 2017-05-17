@@ -36,27 +36,21 @@ public class flatmapTest extends UnitTest {
 				User.findAll());
 		System.out.println();
 
-		// Listの場合 UsersCollection userCollection = new
-		// UsersCollection(Users.findAll());
-
 		List<Project> projectList = userCollection.list().stream()
 				.flatMap(user -> ProjectRepo.findPass(user).stream())
 				.collect(Collectors.toList());
 
-
-//		// optional<Optional<Object>>の場合
 		Optional<Project> optProject = Optional.ofNullable(nullProject);
 		Optional<String> map = optProject.flatMap(pr -> {
-			return Optional.ofNullable(pr.projectName); });
+			return Optional.ofNullable(pr.projectName);
+		});
 
-//		//optional覚えておくこと
+		// //optional覚えておくこと
 
-		//nullじゃない場合のみ実行する
+		// nullじゃない場合のみ実行する
 		User userList = (User) optProject.map(pr -> pr.users).orElse(null);
 
-
 		System.out.println(userList);
-
 
 	}
 }

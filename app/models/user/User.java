@@ -8,38 +8,38 @@ import lombok.experimental.Accessors;
 import models.user.types.UserType;
 import play.db.jpa.Model;
 
-@Entity(name="Users")
+@Entity(name = "Users")
 @Getter
 @Accessors(fluent = true)
-public class User extends Model{
+public class User extends Model {
 
-    //カラムの作成
-	//ユーザー名
-    @Column(name = "name")
-    public String name;
-  //public UserName name;
+	// カラムの作成
+	// ユーザー名
+	@Column(name = "name")
+	public String name;
+	// public UserName name;
 
-    //パスワード
-    @Column(name = "pass")
-    public String pass;
+	// パスワード
+	@Column(name = "pass")
+	public String pass;
 
-    //ユーザー種別
-    @Column(name="userType")
-    public Integer userType;
+	// ユーザー種別
+	@Column(name = "userType")
+	public Integer userType;
 
-    public User(String name,String pass){
-    	this.name = name;
-    	this.pass = pass;
-    	this.userType = UserType.利用者.intValue;
-    }
+	public User(String name, String pass) {
+		this.name = name;
+		this.pass = pass;
+		this.userType = UserType.利用者.intValue;
+	}
 
-    public User(String name,String pass,UserType userType){
-    	this.name = name;
-    	this.pass = pass;
-    	this.userType = userType.intValue;
-    }
+	public User(String name, String pass, UserType userType) {
+		this.name = name;
+		this.pass = pass;
+		this.userType = userType.intValue;
+	}
 
-    public UserType userType(){
-    	return UserType.valueOf(this.userType);
-    }
+	public UserType userType() {
+		return UserType.valueOf(this.userType);
+	}
 }
