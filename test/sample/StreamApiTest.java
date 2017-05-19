@@ -1,10 +1,11 @@
 package sample;
 
-import org.junit.Before;
+import org.junit.*;
 
-import play.test.Fixtures;
-import play.test.UnitTest;
+import play.test.*;
 
+//機能毎にファイル作成したのでDeprecated
+@Deprecated
 public class StreamApiTest extends UnitTest {
 
 	@Before
