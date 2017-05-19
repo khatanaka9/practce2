@@ -1,15 +1,13 @@
 package sample;
 
-import org.junit.Before;
 
-import play.test.Fixtures;
-import play.test.UnitTest;
-
+//機能毎にファイル作成したのでDeprecated
+@Deprecated
 public class StreamApiTest extends UnitTest {
-
-	@Before
-	public void setUp() {
-		Fixtures.deleteDatabase();
-
-	}
+    
+    @Before
+    public void setUp() {
+        Fixtures.deleteDatabase();
+        
+    }
 }
